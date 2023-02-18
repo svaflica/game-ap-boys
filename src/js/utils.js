@@ -9,34 +9,52 @@ function colisao({ player1, enemy }) {
 }
 // Botões quando acaba a partida
 let buttonsFinish = document.querySelector('.l-main_buttons')
+// let textFinish = document.querySelector('.l-main_tex')
+
+function wait(ms) {
+    let current_date = Date.now();
+    while (current_date + ms > Date.now()) {}
+  }
+
+function status_game(text_status) {
+    document.querySelector('.c-fufel').style.display = 'block';
+    document.querySelector('.c-fufel').innerHTML = text_status;
+}
 
 // SIXTH TASK - Game trigger and game over
-function winner({ player, enemy, timerID }) {
+function winner({ player, enemy, timerID, winner_text, page_name}) {
     clearTimeout(timerID)
 
     document.querySelector('.c-timer').style.display = 'block';
 
     if (auxWinner === false) {
         if (player.health === enemy.health) {
-            document.querySelector('.c-timer').innerHTML = 'EMPATE';
+            document.querySelector('.c-timer').innerText = winner_text;
+            // textFinish.innerText = winner_text;
+            // textFinish.style.display = 'flex';
             buttonsFinish.style.display = 'flex';
             buttonsFinish.style.background = '#00000047';
             blockControlE = true;
             blockControlP = true;
             auxWinner = true;
         } else if (player.health > enemy.health) {
-            document.querySelector('.c-timer').innerHTML = 'Jogador 1 Ganhou';
+            document.querySelector('.c-timer').innerText = winner_text;
+            // textFinish.innerText = winner_text;
+            // textFinish.style.display = 'flex';
             buttonsFinish.style.display = 'flex';
             buttonsFinish.style.background = '#00000047';
             auxWinner = true;
             blockControlE = true;
         } else if (enemy.health > player.health) {
-            document.querySelector('.c-timer').innerHTML = 'Jogador 2 Ganhou';
-            buttonsFinish.style.display = 'flex';
+            document.querySelector('.c-timer').innerText = winner_text;
+            // textFinish.innerText = winner_text;
+            // textFinish.style.display = 'flex';
+            buttonsFinish.style.display = 'block';
             buttonsFinish.style.background = '#00000047';
             auxWinner = true;
             blockControlP = true;
         }
+        // window.location.href = page_name;
     }
 }
 

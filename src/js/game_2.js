@@ -4,7 +4,7 @@ const c = canvas.getContext('2d'); // Returns an object that provides methods an
 
 var blockControlP = true
 
-localStorage.setItem('PlayerTwo', 'Search');
+localStorage.setItem('PlayerTwo', 'CI');
 canvas.width = 1024
 canvas.height = 567
 c.fillRect(0, 0, canvas.width, canvas.height) // black background
@@ -203,7 +203,7 @@ function animate() {
     player.velocity.x = 0 // não fica sempre se mexendo
 
     if (a) {
-        status_game('Первое испытание: Исследование<br>Нажмите Enter, чтобы продолжить...')
+        status_game('Второе испытание: CI<br>Нажмите Enter, чтобы продолжить...')
     }
     if (keys.enter.pressed && a) {
         a = null
@@ -315,21 +315,21 @@ function animate() {
     if (player.health <= 0 || enemy.health <= 0) {
         if (player.health <= 0 && enemy.health > 0) {
             player.switchSprite('death');
-            winner_text = 'Accuracy90 ниже, чем 0.8'
+            winner_text = 'Need to work'
         }
 
         if (enemy.health <= 0 && player.health > 0) {
             enemy.switchSprite('death');
-            winner_text = 'Accuracy90 близко к 0.99'
+            winner_text = "Approve"
         }
 
         if (enemy.health === player.health) {
             enemy.switchSprite('death');
             player.switchSprite('death');
-            winner_text = 'Accuracy90 между 0.8 и 0.9'
+            winner_text = 'Аппрувер ничего не посмотрел'
         }
 
-        winner({ player, enemy, timerID , winner_text, page_name: 'src/page/game_2.html'});
+        winner({ player, enemy, timerID , winner_text, page_name:'src/page/game_3.html'});
     }
 
 }

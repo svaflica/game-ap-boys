@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="ru-en">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Um jogo de luta criado em HTML, CSS E JavaScript">
+    <meta name="description" content="Игра на HTML, CSS и JavaScript">
     <link rel="shortcut icon" href="src/imagens/favicon/favicon2.png" type="image/x-icon">
     <meta name="author" content="Diogo Lima Carvalho">
     <!-- CSS only -->
@@ -20,115 +20,74 @@
 <body>
     <main>
         <header class="cabecalho">
-            <h1 class="title">Character Select</h1>
+            <h1 class="title">Выбор персонажа</h1>
         </header>
 
         <section class="selection">
 
             <!-- Player 1 -->
             <div class="big__character player__number-1">
-                <img src="src/imagens/viuva-negra-big.png" alt="Imagem do personagem selecionado número um"
+                <img src="src/imagens/vanya-big.png" alt="Отображение персонажа"
                     id="selected__character">
                 <div class="name__character">
-                    <h2 id="nome-jogador-01">Viúva Negra</h2>
+                    <h2 id="vanya">vanya</h2>
                 </div>
             </div>
 
             <!-- Characters -->
             <ul class="characters__list">
-                <li class="character seleted" id="viuva-negra" data-name="Viúva Negra" data-number="01">
+                <li class="character seleted" id="vanya" data-name="Vanya" data-number="01">
                     <span class="tag">1P</span>
-                    <img src="src/imagens/viuva-negra.jpg" alt="Imagem miniatura do personagem Viúva Negra da Marvel">
+                    <img src="src/imagens/vanya.png" alt="Миниатюра Вани">
                 </li>
 
-                <li class="character" id="deadpool" data-name="Deadpool" data-number="02">
+                <li class="character" id="german" data-name="German" data-number="02">
                     <span class="tag">1P</span>
-                    <img src="src/imagens/deadpool.jpg" alt="Imagem miniatura do personagem Deadpool da Marvel">
+                    <img src="src/imagens/german.png" alt="Миниатюра Германа">
                 </li>
 
-                <li class="character second-player_seleted" id="feiticeira-escarlate" data-name="Feiticeira Escarlate"
+                <li class="character" id="alidar" data-name="Alidar"
                     data-number="03">
-                    <span class="tag">2P</span>
-                    <img src="src/imagens/feiticeira-escarlate.png"
-                        alt="Imagem miniatura do personagem Feiticeira Escalateda Marvel">
-                </li>
-
-                <li class="character" id="doutor-estranho" data-name="Doutor Estranho" data-number="04">
                     <span class="tag">1P</span>
-                    <img src="src/imagens/doutor-estranho.jpg"
-                        alt="Imagem miniatura do personagem Doutor Estranho da Marvel">
+                    <img src="src/imagens/alidar.png"
+                        alt="Миниатюра Алидара">
                 </li>
 
-                <li class="character" id="tempestade" data-name="Tempestade" data-number="05">
+                <li class="character" id="ilya" data-name="Ilya" data-number="04">
                     <span class="tag">1P</span>
-                    <img src="src/imagens/tempestade.png" alt="Imagem miniatura do personagem Tempestade da Marvel">
+                    <img src="src/imagens/ilya.png"
+                        alt="Миниатюра Ильи">
                 </li>
 
-                <li class="character " id="cavaleiro-da-lua" data-name="Cavaleiro da Lua" data-number="06">
+                <li class="character" id="artyom" data-name="Artyom" data-number="05">
+                    <span class="tag">1P</span>
+                    <img src="src/imagens/artyom.png" alt="Миниатюра Артема">
+                </li>
+
+                <li class="character " id="ildar" data-name="Ildar" data-number="06">
                     <span class="tag">1P</span>
                     <img src="src/imagens/cavaleiro-da-lua.jpg"
                         alt="Imagem miniatura do personagem Cavaleiro Da Lua da Marvel">
                 </li>
 
-                <li class="character" id="capita-marvel" data-name="Capitã Marvel" data-number="07">
+                <li class="character" id="andrey" data-name="Andrey" data-number="07">
                     <span class="tag">1P</span>
                     <img src="src/imagens/capita-marvel.jpg"
                         alt="Imagem miniatura do personagem Capitã Marvel da Marvel">
                 </li>
-
-                <li class="character" id="homem-aranha" data-name="Homem Aranha" data-number="08">
-                    <span class="tag">1P</span>
-                    <img src="src/imagens/homem-aranha.png" alt="Imagem miniatura do personagem Homem Aranha da Marvel">
-                </li>
-
-                <li class="character" id="homem-de-ferro" data-name="Homem de Ferro" data-number="09">
-                    <span class="tag">1P</span>
-                    <img src="src/imagens/homem-de-ferro.png"
-                        alt="Imagem miniatura do personagem Homem de Ferro da Marvel">
-                </li>
             </ul>
-
-            <!-- Player 2 -->
-            <div class="big__character player__number-2">
-                <img src="src/imagens/feiticeira-escarlate-big.png" alt="Imagem do personagem selecionado número dois">
-                <div class="name__character">
-                    <h2 id="nome-jogador-02">Feiticeira Escarlate</h2>
-                </div>
+            
+            <div class="big__character">
+                <h2 class="name__character">Vanya</h2>
+                <span id="hero_descr">Потяшин Иван — российский влиятельный человек в социальных сетях ВКонтакте, Instagram и Twitter. У него 195 подписчиков в «ВКонтакте», 136 подписчиков в Instagram и 1 подписчик на YouTube. Он известен своей веселой и умной командой, а в его постах часто фигурируют его друзья и семья. Также активно занимается спортом, выступает за футбольную команду «Первоуральск», имеет спортивный разряд 2-й категории.</span>
+                <div><input type="submit" value="Confirmar" class="button__style" id="conf"></div>
+                
             </div>
 
-        </section>
-
-        <section id="card__description">
-            <div class="card">
-                <div class="content__title">
-                    <h2 id="title__name"></h2>
-                    <img src="src/imagens/preview-image.png" alt="Foto de perfil do personagem via marvel API"
-                        id="title_thumbanail" class="card-img-y rounded color-change-2x">
-                </div>
-                <div class="content__text">
-
-                    <div class="text__box">
-                        <p id="box__descrition" class="text-center">
-                            <span class="placeholder col-6"></span>
-                            <span class="placeholder col-8"></span>
-                            <span class="placeholder w-75"></span>
-                            <span class="placeholder" style="width: 25%;"></span>
-                        </p>
-                    </div>
-                </div>
-                <div class="content__buttons">
-                    <input type="submit" value="Confirmar" class="button__style" id="conf">
-                    <input type="submit" value="Cancelar" class="button__style" id="canc">
-                </div>
-
-                <p id="card__link"><a href="http://marvel.com\" target="_blank">Data provided by Marvel. © 2022
-                        MARVEL</a></p>
-            </div>
         </section>
 
         <div class="icons__about">
             <div class="about__text">
-                <!-- <p>Imagens dos ícones: <a href="https://twitter.com/clacefall" target="_blank">@clacefall</a></p> -->
             </div>
         </div>
 

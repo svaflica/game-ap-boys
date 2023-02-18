@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../imagens/favicon/favicon2.png" type="image/x-icon">
+    <link rel="stylesheet" href="../css/desenvolvimento-do-jogo/estilo.css">
+    <title>Start the game!!</title>
+</head>
+
+<body>
+    <main class="l-main">
+
+        <section class="l-main__container">
+
+            <article class="l-container right-side">
+                <div class="c-container__healthBar-Player"></div>
+
+                <div class="c-container__healthBar-bottom" id="playerHealth"></div>
+            </article>
+
+            <div class="c-container__timer" id="timer">10</div>
+
+            <article class="l-container">
+                <div class="c-container__healthBar-Enemy"></div>
+
+                <div class="c-container__healthBar-bottom" id="enemyHealth"></div>
+            </article>
+
+        </section>
+
+        <section class="l-main_buttons">
+            <div>
+                <a href="../../index.html">В меню</a>
+                <a href="game_2.html">Продолжить</a>
+            </div>
+        </section>
+        <div class="c-timer"></div>
+        <div class="c-fufel"></div>
+
+        <div id="name_player">
+            <p class="name-text-pl"><img id="image_player" src="../imagens/game/perfil/te.png"
+                    alt="foto miniatura do personagem escolhido"> <span>Homem de ferro</span></p>
+        </div>
+
+        <div id="name_enemy">
+            <p class="name-text-en"><span>Homem de ferro </span><img id="image_enemy" src="../imagens/game/perfil/te.png"
+                    alt="foto miniatura do personagem escolhido" class="inverted"></p>
+        </div>
+
+        <canvas></canvas>
+    </main>
+
+    <img src="../svg/muted.svg" id="volume" alt="volume">
+
+    <audio src="../audio/music.mp4" loop></audio>
+
+    <!-- Animação health -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"
+        integrity="sha512-H6cPm97FAsgIKmlBA4s774vqoN24V5gSQL4yBTDOY2su2DeXZVhQPxFK4P6GPdnZqM9fg1G3cMv5wD7e6cFLZQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="../js/characterSettings.js"></script>
+    <script src="../js/utils.js"></script>
+    <script src="../js/classes.js"></script>
+    <script src="../js/game.js"></script>
+    <script>
+        //reiniciar o jogo 
+        let restart = document.querySelector('#restart').addEventListener('click', e => window.location.reload());
+
+        // Música
+        let volume = document.querySelector('#volume');
+        let audio = document.querySelector('audio');
+
+        volume.addEventListener('click', () => {
+
+            if (volume.src.includes('muted.svg')) {
+                volume.src = '../svg/volume.svg';
+                audio.currentTime = 0;
+                audio.volume = 0.1;
+                audio.play();
+            } else {
+                volume.src = '../svg/muted.svg';
+                audio.pause();
+            }
+        })
+    </script>
+</body>
+
+</html>

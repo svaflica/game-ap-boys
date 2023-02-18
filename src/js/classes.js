@@ -260,9 +260,9 @@ class Fighter extends Sprite {
     // virar o personagem ao contrario
     flipHorizontally() {
         if (this === player) {
-            playerSettingOne === 'Deadpool'? c.translate(-300, 0) : c.translate(-400, 0);
+            playerSettingOne === 'German'? c.translate(-300, 0) : c.translate(-400, 0);
         }else{
-            playerSettingTwo === 'Deadpool'? c.translate(-300, 0) : c.translate(-400, 0);
+            playerSettingTwo === 'German'? c.translate(-300, 0) : c.translate(-400, 0);
         }
 
         c.drawImage(

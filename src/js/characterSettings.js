@@ -1,6 +1,6 @@
 const settings = [
     {
-        nome: 'Viúva Negra',
+        nome: 'Vanya',
         sprites: {
             idle: {
                 imgSrc: '../imagens/game/bw/bw_idle.png',
@@ -34,7 +34,7 @@ const settings = [
         perfil:'../imagens/game/perfil/bw.png'
     },
     {
-        nome: 'Deadpool',
+        nome: 'German',
         sprites: {
             idle: {
                 imgSrc: '../imagens/game/dp/dp_idle.png',
@@ -68,7 +68,7 @@ const settings = [
         perfil:'../imagens/game/perfil/dp.png'
     },
     {
-        nome: 'Feiticeira Escarlate',
+        nome: 'CD',
         sprites: {
             idle: {
                 imgSrc: '../imagens/game/fe/fe_idle.png',
@@ -136,7 +136,7 @@ const settings = [
         perfil:'../imagens/game/perfil/de.png'
     },
     {
-        nome: 'Tempestade',
+        nome: 'CI',
         sprites: {
             idle: {
                 imgSrc: '../imagens/game/te/te_idle.png',
@@ -168,6 +168,40 @@ const settings = [
             }
         },
         perfil:'../imagens/game/perfil/te.png'
+    },
+    {
+        nome: 'Users',
+        sprites: {
+            idle: {
+                imgSrc: '../imagens/game/bw/bw_idle.png',
+                framesMax: 11
+            },
+            run: {
+                imgSrc: '../imagens/game/bw/bw_run.png',
+                framesMax: 6
+            },
+            jump: {
+                imgSrc: '../imagens/game/bw/bw_jump.png',
+                framesMax: 4
+            },
+            fall: {
+                imgSrc: '../imagens/game/bw/bw_fall.png',
+                framesMax: 5
+            },
+            attack1: {
+                imgSrc: '../imagens/game/bw/bw_attack1.png',
+                framesMax: 6
+            },
+            takeHit: {
+                imgSrc: '../imagens/game/bw/bw_takehit.png',
+                framesMax: 3
+            },
+            death: {
+                imgSrc: '../imagens/game/bw/bw_death.png',
+                framesMax: 4
+            }
+        },
+        perfil:'../imagens/game/perfil/bw.png'
     },
     {
         nome: 'Cavaleiro da Lua',
@@ -204,7 +238,7 @@ const settings = [
         perfil:'../imagens/game/perfil/mk.png'
     },
     {
-        nome: 'Capitã Marvel',
+        nome: 'Search',
         sprites: {
             idle: {
                 imgSrc: '../imagens/game/cm/cm_idle.png',
