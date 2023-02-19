@@ -329,7 +329,7 @@ function animate() {
             winner_text = 'Ничего не случилось...'
         }
 
-        winner({ player, enemy, timerID , winner_text, page_name:'src/page/game_3.html'});
+        winner({ player, enemy, timerID , winner_text, page_name:'game_3.html'});
     }
 
 }
@@ -352,18 +352,35 @@ window.addEventListener('keydown', event => { // faz a verificação de cada tec
                     keys.d.pressed = true
                     player.lastKey = 'd'
                     break;
+                case 'в':
+                    case 'd': // ir para direita
+                    keys.d.pressed = true
+                    player.lastKey = 'd'
+                    break;
                 case 'a': // ir para esquerda
                     keys.a.pressed = true
                     player.lastKey = 'a'
                     break;
+                case 'ф': // ir para esquerda
+                    keys.a.pressed = true
+                    player.lastKey = 'a'
+                    break;
                 case 'w': // jump - sempre vai para baixo por conta da gravidade
-
+                    // Pular uma vez
+                    if (player.velocity.y === 0) {
+                        player.velocity.y = -14;
+                    }
+                    break;
+                case 'ц': // jump - sempre vai para baixo por conta da gravidade
                     // Pular uma vez
                     if (player.velocity.y === 0) {
                         player.velocity.y = -14;
                     }
                     break;
                 case 's': // FOURTH TASK - ativar ataque
+                    player.attacks();
+                    break;
+                case 'ы': // FOURTH TASK - ativar ataque
                     player.attacks();
                     break;
                 // case 'Enter':
@@ -410,6 +427,12 @@ window.addEventListener('keyup', event => { // faz a verificação de cada tecla
             keys.d.pressed = false
             break;
         case 'a':
+            keys.a.pressed = false
+            break;
+        case 'в':
+            keys.d.pressed = false
+            break;
+        case 'ф':
             keys.a.pressed = false
             break;
 

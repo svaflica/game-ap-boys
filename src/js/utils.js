@@ -49,7 +49,8 @@ function winner({ player, enemy, timerID, winner_text, page_name}) {
             document.querySelector('.c-timer').innerHTML = winner_text;
             // textFinish.innerText = winner_text;
             // textFinish.style.display = 'flex';
-            buttonsFinish.style.display = 'block';
+            buttonsFinish.innerHTML = `<div><a href="../../index.html">В меню</a><a href="${page_name}">Переиграть</a></div>`
+            buttonsFinish.style.display = 'flex';
             buttonsFinish.style.background = '#00000047';
             auxWinner = true;
             blockControlP = true;

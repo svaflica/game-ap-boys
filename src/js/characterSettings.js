@@ -31,7 +31,7 @@ const settings = [
                 framesMax: 3
             }
         },
-        perfil:'../imagens/game/perfil/bw.png'
+        perfil:'../imagens/game/vanya/pre.png'
     },
     {
         nome: 'Artyom',
@@ -65,7 +65,7 @@ const settings = [
                 framesMax: 3
             }
         },
-        perfil:'../imagens/game/perfil/bw.png'
+        perfil:'../imagens/game/artyom/pre.png'
     },
     {
         nome: 'German',
@@ -99,38 +99,38 @@ const settings = [
                 framesMax: 2
             }
         },
-        perfil:'../imagens/game/perfil/de.png'
+        perfil:'../imagens/game/german/pre.png'
     },
     {
         nome: 'CD',
         sprites: {
             idle: {
-                imgSrc: '../imagens/game/fe/fe_idle.png',
-                framesMax: 6
+                imgSrc: '../imagens/game/te/te_idle.png',
+                framesMax: 10
             },
             run: {
-                imgSrc: '../imagens/game/fe/fe_run.png',
-                framesMax: 3
+                imgSrc: '../imagens/game/te/te_run.png',
+                framesMax: 10
             },
             jump: {
-                imgSrc: '../imagens/game/fe/fe_jump.png',
+                imgSrc: '../imagens/game/te/te_jump.png',
                 framesMax: 1
             },
             fall: {
-                imgSrc: '../imagens/game/fe/fe_fall.png',
+                imgSrc: '../imagens/game/te/te_fall.png',
                 framesMax: 1
             },
             attack1: {
-                imgSrc: '../imagens/game/fe/fe_attack1.png',
-                framesMax: 8
+                imgSrc: '../imagens/game/te/te_attack1.png',
+                framesMax: 6
             },
             takeHit: {
-                imgSrc: '../imagens/game/fe/fe_takehit.png',
+                imgSrc: '../imagens/game/te/te_takehit.png',
                 framesMax: 3
             },
             death: {
-                imgSrc: '../imagens/game/fe/fe_death.png',
-                framesMax: 3
+                imgSrc: '../imagens/game/te/te_death.png',
+                framesMax: 1
             }
         },
         perfil:'../imagens/game/perfil/fe.png'
@@ -167,38 +167,38 @@ const settings = [
                 framesMax: 6
             }
         },
-        perfil:'../imagens/game/perfil/de.png'
+        perfil:'../imagens/game/alidar/pre.png'
     },
     {
         nome: 'CI',
         sprites: {
             idle: {
-                imgSrc: '../imagens/game/te/te_idle.png',
-                framesMax: 10
+                imgSrc: '../imagens/game/fe/fe_idle.png',
+                framesMax: 6
             },
             run: {
-                imgSrc: '../imagens/game/te/te_run.png',
-                framesMax: 10
+                imgSrc: '../imagens/game/fe/fe_run.png',
+                framesMax: 3
             },
             jump: {
-                imgSrc: '../imagens/game/te/te_jump.png',
+                imgSrc: '../imagens/game/fe/fe_jump.png',
                 framesMax: 1
             },
             fall: {
-                imgSrc: '../imagens/game/te/te_fall.png',
+                imgSrc: '../imagens/game/fe/fe_fall.png',
                 framesMax: 1
             },
             attack1: {
-                imgSrc: '../imagens/game/te/te_attack1.png',
-                framesMax: 6
+                imgSrc: '../imagens/game/fe/fe_attack1.png',
+                framesMax: 8
             },
             takeHit: {
-                imgSrc: '../imagens/game/te/te_takehit.png',
+                imgSrc: '../imagens/game/fe/fe_takehit.png',
                 framesMax: 3
             },
             death: {
-                imgSrc: '../imagens/game/te/te_death.png',
-                framesMax: 1
+                imgSrc: '../imagens/game/fe/fe_death.png',
+                framesMax: 3
             }
         },
         perfil:'../imagens/game/perfil/te.png'
@@ -269,7 +269,7 @@ const settings = [
                 framesMax: 1
             }
         },
-        perfil:'../imagens/game/perfil/mk.png'
+        perfil:'../imagens/game/ildar/pre.png'
     },
     {
         nome: 'Search',
@@ -337,7 +337,7 @@ const settings = [
                 framesMax: 2
             }
         },
-        perfil:'../imagens/game/perfil/ha.png'
+        perfil:'../imagens/game/andrey/pre.png'
     },
     {
         nome: 'Ilya',
@@ -371,7 +371,7 @@ const settings = [
                 framesMax: 4
             }
         },
-        perfil:'../imagens/game/perfil/hf.png'
+        perfil:'../imagens/game/ilya/pre.png'
     }
 ]
 
