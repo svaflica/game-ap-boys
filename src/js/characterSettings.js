@@ -3,32 +3,66 @@ const settings = [
         nome: 'Vanya',
         sprites: {
             idle: {
-                imgSrc: '../imagens/game/bw/bw_idle.png',
-                framesMax: 11
-            },
-            run: {
-                imgSrc: '../imagens/game/bw/bw_run.png',
-                framesMax: 6
-            },
-            jump: {
-                imgSrc: '../imagens/game/bw/bw_jump.png',
+                imgSrc: '../imagens/game/vanya/mk_idle.png',
                 framesMax: 4
             },
+            run: {
+                imgSrc: '../imagens/game/vanya/mk_run.png',
+                framesMax: 10
+            },
+            jump: {
+                imgSrc: '../imagens/game/vanya/mk_jump.png',
+                framesMax: 2
+            },
             fall: {
-                imgSrc: '../imagens/game/bw/bw_fall.png',
-                framesMax: 5
+                imgSrc: '../imagens/game/vanya/mk_fall.png',
+                framesMax: 2
             },
             attack1: {
-                imgSrc: '../imagens/game/bw/bw_attack1.png',
-                framesMax: 6
+                imgSrc: '../imagens/game/vanya/mk_attack1.png',
+                framesMax: 8
             },
             takeHit: {
-                imgSrc: '../imagens/game/bw/bw_takehit.png',
+                imgSrc: '../imagens/game/vanya/mk_takehit.png',
                 framesMax: 3
             },
             death: {
-                imgSrc: '../imagens/game/bw/bw_death.png',
+                imgSrc: '../imagens/game/bw/vanya/mk_death.png',
+                framesMax: 3
+            }
+        },
+        perfil:'../imagens/game/perfil/bw.png'
+    },
+    {
+        nome: 'Artyom',
+        sprites: {
+            idle: {
+                imgSrc: '../imagens/game/artyom/mk_idle.png',
                 framesMax: 4
+            },
+            run: {
+                imgSrc: '../imagens/game/artyom/mk_run.png',
+                framesMax: 10
+            },
+            jump: {
+                imgSrc: '../imagens/game/artyom/mk_jump.png',
+                framesMax: 2
+            },
+            fall: {
+                imgSrc: '../imagens/game/artyom/mk_fall.png',
+                framesMax: 2
+            },
+            attack1: {
+                imgSrc: '../imagens/game/artyom/mk_attack1.png',
+                framesMax: 8
+            },
+            takeHit: {
+                imgSrc: '../imagens/game/artyom/mk_takehit.png',
+                framesMax: 3
+            },
+            death: {
+                imgSrc: '../imagens/game/bw/artyom/mk_death.png',
+                framesMax: 3
             }
         },
         perfil:'../imagens/game/perfil/bw.png'
@@ -37,35 +71,35 @@ const settings = [
         nome: 'German',
         sprites: {
             idle: {
-                imgSrc: '../imagens/game/dp/dp_idle.png',
-                framesMax: 10
+                imgSrc: '../imagens/game/german/de_idle.png',
+                framesMax: 9
             },
             run: {
-                imgSrc: '../imagens/game/dp/dp_run.png',
-                framesMax: 6
+                imgSrc: '../imagens/game/german/de_run.png',
+                framesMax: 5
             },
             jump: {
-                imgSrc: '../imagens/game/dp/dp_jump.png',
-                framesMax: 2
+                imgSrc: '../imagens/game/german/de_jump.png',
+                framesMax: 1
             },
             fall: {
-                imgSrc: '../imagens/game/dp/dp_fall.png',
-                framesMax: 2
+                imgSrc: '../imagens/game/german/de_fall.png',
+                framesMax: 1
             },
             attack1: {
-                imgSrc: '../imagens/game/dp/dp_attack1.png',
+                imgSrc: '../imagens/game/german/de_attack1.png',
                 framesMax: 6
             },
             takeHit: {
-                imgSrc: '../imagens/game/dp/dp_takehit.png',
+                imgSrc: '../imagens/game/german/de_takehit.png',
                 framesMax: 3
             },
             death: {
-                imgSrc: '../imagens/game/dp/dp_death.png',
-                framesMax: 4
+                imgSrc: '../imagens/game/german/de_death.png',
+                framesMax: 2
             }
         },
-        perfil:'../imagens/game/perfil/dp.png'
+        perfil:'../imagens/game/perfil/de.png'
     },
     {
         nome: 'CD',
@@ -102,35 +136,35 @@ const settings = [
         perfil:'../imagens/game/perfil/fe.png'
     },
     {
-        nome: 'Doutor Estranho',
+        nome: 'Alidar',
         sprites: {
             idle: {
-                imgSrc: '../imagens/game/de/de_idle.png',
+                imgSrc: '../imagens/game/alidar/ha_idle.png',
                 framesMax: 9
             },
             run: {
-                imgSrc: '../imagens/game/de/de_run.png',
-                framesMax: 5
+                imgSrc: '../imagens/game/alidar/ha_run.png',
+                framesMax: 7
             },
             jump: {
-                imgSrc: '../imagens/game/de/de_jump.png',
-                framesMax: 1
+                imgSrc: '../imagens/game/alidar/ha_jump.png',
+                framesMax: 2
             },
             fall: {
-                imgSrc: '../imagens/game/de/de_fall.png',
+                imgSrc: '../imagens/game/alidar/ha_fall.png',
                 framesMax: 1
             },
             attack1: {
-                imgSrc: '../imagens/game/de/de_attack1.png',
+                imgSrc: '../imagens/game/alidar/ha_attack1.png',
                 framesMax: 6
             },
             takeHit: {
-                imgSrc: '../imagens/game/de/de_takehit.png',
+                imgSrc: '../imagens/game/alidar/ha_takehit.png',
                 framesMax: 3
             },
             death: {
-                imgSrc: '../imagens/game/de/de_death.png',
-                framesMax: 2
+                imgSrc: '../imagens/game/alidar/ha_death.png',
+                framesMax: 6
             }
         },
         perfil:'../imagens/game/perfil/de.png'
@@ -204,35 +238,35 @@ const settings = [
         perfil:'../imagens/game/perfil/bw.png'
     },
     {
-        nome: 'Cavaleiro da Lua',
+        nome: 'Ildar',
         sprites: {
             idle: {
-                imgSrc: '../imagens/game/mk/mk_idle.png',
-                framesMax: 4
+                imgSrc: '../imagens/game/ildar/hf_idle.png',
+                framesMax: 9
             },
             run: {
-                imgSrc: '../imagens/game/mk/mk_run.png',
-                framesMax: 10
+                imgSrc: '../imagens/game/ildar/hf_run.png',
+                framesMax: 2
             },
             jump: {
-                imgSrc: '../imagens/game/mk/mk_jump.png',
+                imgSrc: '../imagens/game/ildar/hf_jump.png',
                 framesMax: 2
             },
             fall: {
-                imgSrc: '../imagens/game/mk/mk_fall.png',
-                framesMax: 2
+                imgSrc: '../imagens/game/ildar/hf_fall.png',
+                framesMax: 1
             },
             attack1: {
-                imgSrc: '../imagens/game/mk/mk_attack1.png',
-                framesMax: 8
+                imgSrc: '../imagens/game/ildar/hf_attack1.png',
+                framesMax: 6
             },
             takeHit: {
-                imgSrc: '../imagens/game/mk/mk_takehit.png',
+                imgSrc: '../imagens/game/ildar/hf_takehit.png',
                 framesMax: 3
             },
             death: {
-                imgSrc: '../imagens/game/mk/mk_death.png',
-                framesMax: 3
+                imgSrc: '../imagens/game/ildar/hf_death.png',
+                framesMax: 1
             }
         },
         perfil:'../imagens/game/perfil/mk.png'
@@ -272,69 +306,69 @@ const settings = [
         perfil:'../imagens/game/perfil/cm.png'
     },
     {
-        nome: 'Homem Aranha',
+        nome: 'Andrey',
         sprites: {
             idle: {
-                imgSrc: '../imagens/game/ha/ha_idle.png',
+                imgSrc: '../imagens/game/andrey/de_idle.png',
                 framesMax: 9
             },
             run: {
-                imgSrc: '../imagens/game/ha/ha_run.png',
-                framesMax: 7
+                imgSrc: '../imagens/game/andrey/de_run.png',
+                framesMax: 5
             },
             jump: {
-                imgSrc: '../imagens/game/ha/ha_jump.png',
-                framesMax: 2
+                imgSrc: '../imagens/game/andrey/de_jump.png',
+                framesMax: 1
             },
             fall: {
-                imgSrc: '../imagens/game/ha/ha_fall.png',
+                imgSrc: '../imagens/game/andrey/de_fall.png',
                 framesMax: 1
             },
             attack1: {
-                imgSrc: '../imagens/game/ha/ha_attack1.png',
+                imgSrc: '../imagens/game/andrey/de_attack1.png',
                 framesMax: 6
             },
             takeHit: {
-                imgSrc: '../imagens/game/ha/ha_takehit.png',
+                imgSrc: '../imagens/game/andrey/de_takehit.png',
                 framesMax: 3
             },
             death: {
-                imgSrc: '../imagens/game/ha/ha_death.png',
-                framesMax: 6
+                imgSrc: '../imagens/game/andrey/de_death.png',
+                framesMax: 2
             }
         },
         perfil:'../imagens/game/perfil/ha.png'
     },
     {
-        nome: 'Homem de Ferro',
+        nome: 'Ilya',
         sprites: {
             idle: {
-                imgSrc: '../imagens/game/hf/hf_idle.png',
-                framesMax: 9
+                imgSrc: '../imagens/game/ilya/dp_idle.png',
+                framesMax: 10
             },
             run: {
-                imgSrc: '../imagens/game/hf/hf_run.png',
-                framesMax: 2
+                imgSrc: '../imagens/game/ilya/dp_run.png',
+                framesMax: 6
             },
             jump: {
-                imgSrc: '../imagens/game/hf/hf_jump.png',
+                imgSrc: '../imagens/game/ilya/dp_jump.png',
                 framesMax: 2
             },
             fall: {
-                imgSrc: '../imagens/game/hf/hf_fall.png',
-                framesMax: 1
+                imgSrc: '../imagens/game/ilya/dp_fall.png',
+                framesMax: 2
             },
             attack1: {
-                imgSrc: '../imagens/game/hf/hf_attack1.png',
+                imgSrc: '../imagens/game/ilya/dp_attack1.png',
                 framesMax: 6
             },
             takeHit: {
-                imgSrc: '../imagens/game/hf/hf_takehit.png',
+                imgSrc: '../imagens/game/ilya/dp_takehit.png',
                 framesMax: 3
             },
             death: {
-                imgSrc: '../imagens/game/hf/hf_death.png',
-                framesMax: 1
+                imgSrc: '../imagens/game/ilya/dp_death.png',
+                framesMax: 4
             }
         },
         perfil:'../imagens/game/perfil/hf.png'

@@ -203,7 +203,7 @@ function animate() {
     player.velocity.x = 0 // não fica sempre se mexendo
 
     if (a) {
-        status_game('Четвертое испытание: Поддержка сервисовr>Нажмите Enter, чтобы продолжить...')
+        status_game('Четвертое испытание: Поддержка сервисов<br>Нажмите Enter, чтобы продолжить...')
     }
     if (keys.enter.pressed && a) {
         a = null
@@ -320,7 +320,7 @@ function animate() {
 
         if (enemy.health <= 0 && player.health > 0) {
             enemy.switchSprite('death');
-            winner_text = "Мы победили, сервисами больше никто не пользуется..."
+            winner_text = "Мы победили<br>Сервисами больше никто не пользуется"
         }
 
         if (enemy.health === player.health) {

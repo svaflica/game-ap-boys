@@ -83,7 +83,7 @@ main {
     width: 100%;
     font-size: 27px;
     color: var(--cor-padrao);
-    font-family: 'command', sans-serif;
+    /* font-family: 'command', sans-serif; */
     position: absolute;
     bottom: 0;
     display: "flex";
@@ -105,6 +105,17 @@ main {
     position: absolute;
     bottom: 0;
     /* top: 20; */
+    display: "flex";
+}
+
+.selection .big__character diva {
+    width: 100%;
+    font-size: 27px;
+    color: var(--cor-padrao);
+    font-family: 'command', sans-serif;
+    position: absolute;
+    /* bottom: 0; */
+    top: 20;
     display: "flex";
 }
 

@@ -13,15 +13,17 @@ personagens.forEach((personagem) => {
 
         // Imagem grande do personagem
         const imagemJg1 = document.getElementById('selected__character');
-        imagemJg1.src = `src/imagens/${idSelecionado}-big.png`;
+        imagemJg1.src = `../imagens/${idSelecionado}-big.png`;
 
         const nameJg1 = document.getElementsByClassName('name__character')[0];
         nameJg1.innerHTML = `<h2 id='${idSelecionado}'>${idSelecionado}</h2>`
 
-        const name_pers = document.getElementsByClassName('name__character')[1];
+        // const name_pers = document.getElementById('descr_character');
+        const nameJg2 = document.getElementsByClassName('name__character')[1];
+        nameJg2.innerHTML = `<h2 id="descr_character">${idSelecionado}</h2>`
         const text_span = document.getElementById('hero_descr');
 
-        name_pers.innerText = idSelecionado;
+        // name_pers.innerText = idSelecionado;
         if (idSelecionado == 'vanya') {
             text_span.innerText = 'Потяшин Иван — российский влиятельный человек в социальных сетях ВКонтакте, Instagram и Twitter. У него 195 подписчиков в «ВКонтакте», 136 подписчиков в Instagram и 1 подписчик на YouTube. Он известен своей веселой и умной командой, а в его постах часто фигурируют его друзья и семья. Также активно занимается спортом, выступает за футбольную команду «Первоуральск», имеет спортивный разряд 2-й категории.';
         }
@@ -48,15 +50,16 @@ personagens.forEach((personagem) => {
         const personagemSelecionado = document.querySelector('.seleted');
         idSelecionado = personagemSelecionado.getAttribute('id');
         const imagemJg1 = document.getElementById('selected__character');
-        imagemJg1.src = `src/imagens/${idSelecionado}-big.png`;
+        imagemJg1.src = `../imagens/${idSelecionado}-big.png`;
 
         const nameJg1 = document.getElementsByClassName('name__character')[0];
         nameJg1.innerHTML = `<h2 id='${idSelecionado}'>${idSelecionado}</h2>`
 
-        const name_pers = document.getElementsByClassName('name__character')[1];
+        const nameJg2 = document.getElementsByClassName('name__character')[1];
+        nameJg2.innerHTML = `<h2 id="descr_character">${idSelecionado}</h2>`
         const text_span = document.getElementById('hero_descr');
 
-        name_pers.innerText = idSelecionado;
+        // name_pers.innerText = idSelecionado;
         if (idSelecionado == 'vanya') {
             text_span.innerText = 'Потяшин Иван — российский влиятельный человек в социальных сетях ВКонтакте, Instagram и Twitter. У него 195 подписчиков в «ВКонтакте», 136 подписчиков в Instagram и 1 подписчик на YouTube. Он известен своей веселой и умной командой, а в его постах часто фигурируют его друзья и семья. Также активно занимается спортом, выступает за футбольную команду «Первоуральск», имеет спортивный разряд 2-й категории.';
         }
@@ -150,7 +153,7 @@ let btnConf = document.querySelector('#conf').addEventListener('click', () => {
     }
 
     // Redirecionar para a página do jogo
-    window.location.href = "src/pages/game_1.html";
+    window.location.href = "game_1.html";
 
 });
 

@@ -29,7 +29,7 @@ function winner({ player, enemy, timerID, winner_text, page_name}) {
 
     if (auxWinner === false) {
         if (player.health === enemy.health) {
-            document.querySelector('.c-timer').innerText = winner_text;
+            document.querySelector('.c-timer').innerHTML = winner_text;
             // textFinish.innerText = winner_text;
             // textFinish.style.display = 'flex';
             buttonsFinish.style.display = 'flex';
@@ -38,7 +38,7 @@ function winner({ player, enemy, timerID, winner_text, page_name}) {
             blockControlP = true;
             auxWinner = true;
         } else if (player.health > enemy.health) {
-            document.querySelector('.c-timer').innerText = winner_text;
+            document.querySelector('.c-timer').innerHTML = winner_text;
             // textFinish.innerText = winner_text;
             // textFinish.style.display = 'flex';
             buttonsFinish.style.display = 'flex';
@@ -46,7 +46,7 @@ function winner({ player, enemy, timerID, winner_text, page_name}) {
             auxWinner = true;
             blockControlE = true;
         } else if (enemy.health > player.health) {
-            document.querySelector('.c-timer').innerText = winner_text;
+            document.querySelector('.c-timer').innerHTML = winner_text;
             // textFinish.innerText = winner_text;
             // textFinish.style.display = 'flex';
             buttonsFinish.style.display = 'block';

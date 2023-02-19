@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ru-en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Игра на HTML, CSS и JavaScript">
+    <link rel="shortcut icon" href="../imagens/favicon/favicon2.png" type="image/x-icon">
+    <meta name="author" content="Diogo Lima Carvalho">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/animacoes.css">
+    <link rel="stylesheet" href="../css/seletor-de-personagens/estilo.css">
+    <title>Choose your character</title>
+</head>
+
+<body>
+    <main>
+        <header class="cabecalho">
+            <h1 class="title">Выбор персонажа</h1>
+        </header>
+
+        <section class="selection">
+
+            <!-- Player 1 -->
+            <div class="big__character player__number-1">
+                <img src="../imagens/vanya-big.png" alt="Отображение персонажа"
+                    id="selected__character">
+                <div class="name__character">
+                    <h2 id="vanya">vanya</h2>
+                </div>
+            </div>
+
+            <!-- Characters -->
+            <ul class="characters__list">
+                <li class="character seleted" id="vanya" data-name="Vanya" data-number="01">
+                    <span class="tag">1P</span>
+                    <img src="../imagens/vanya.png" alt="Миниатюра Вани">
+                </li>
+
+                <li class="character" id="german" data-name="German" data-number="02">
+                    <span class="tag">1P</span>
+                    <img src="../imagens/german.png" alt="Миниатюра Германа">
+                </li>
+
+                <li class="character" id="alidar" data-name="Alidar"
+                    data-number="03">
+                    <span class="tag">1P</span>
+                    <img src="../imagens/alidar.png"
+                        alt="Миниатюра Алидара">
+                </li>
+
+                <li class="character" id="ilya" data-name="Ilya" data-number="04">
+                    <span class="tag">1P</span>
+                    <img src="../imagens/ilya.png"
+                        alt="Миниатюра Ильи">
+                </li>
+
+                <li class="character" id="artyom" data-name="Artyom" data-number="05">
+                    <span class="tag">1P</span>
+                    <img src="../imagens/artyom.png" alt="Миниатюра Артема">
+                </li>
+
+                <li class="character " id="ildar" data-name="Ildar" data-number="06">
+                    <span class="tag">1P</span>
+                    <img src="../imagens/ildar.png"
+                        alt="Imagem miniatura do personagem Cavaleiro Da Lua da Marvel">
+                </li>
+
+                <li class="character" id="andrey" data-name="Andrey" data-number="07">
+                    <span class="tag">1P</span>
+                    <img src="../imagens/andrey.png"
+                        alt="Imagem miniatura do personagem Capitã Marvel da Marvel">
+                </li>
+            </ul>
+            
+            <div class="big__character">
+                <diva class="name__character"><h2 id="descr_character">vanya</h2></diva>
+                <span id="hero_descr">Потяшин Иван — российский влиятельный человек в социальных сетях ВКонтакте, Instagram и Twitter. У него 195 подписчиков в «ВКонтакте», 136 подписчиков в Instagram и 1 подписчик на YouTube. Он известен своей веселой и умной командой, а в его постах часто фигурируют его друзья и семья. Также активно занимается спортом, выступает за футбольную команду «Первоуральск», имеет спортивный разряд 2-й категории.</span>
+                <div><input type="submit" value="Confirmar" class="button__style" id="conf"></div>
+                
+            </div>
+
+        </section>
+
+        <div class="icons__about">
+            <div class="about__text">
+            </div>
+        </div>
+
+        <img src="../svg/muted.svg" id="volume" alt="volume">
+    </main>
+
+    <audio src="../audio/music.mp4" loop></audio>
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+    <script src="../js/main.js"></script>
+    <script src="https://kit.fontawesome.com/f9e19193d6.js" crossorigin="anonymous"></script>
+    <script>
+
+        let volume = document.querySelector('#volume');
+        let audio = document.querySelector('audio');
+        
+        volume.addEventListener('click', () =>{
+
+            if (volume.src.includes('muted.svg')) {
+                volume.src = '../svg/volume.svg';
+                audio.currentTime = 0;
+                audio.volume = 0.1;
+                audio.play();
+            }else{
+                volume.src = '../svg/muted.svg';
+                audio.pause();
+            }
+        })
+    </script>
+</body>
+
+</html>
